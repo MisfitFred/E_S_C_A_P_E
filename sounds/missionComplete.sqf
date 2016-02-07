@@ -1,1 +1,0 @@
-playSound "mission_complete";

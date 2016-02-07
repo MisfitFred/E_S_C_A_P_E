@@ -1,98 +1,108 @@
-MISSION README
-==============
+CO08 Escape Altis
+18.12.2013
+ 
+Requirements
+-----------------
+Arma 3 v1.08 minimum
+ 
+Changelog 0.7
+------------------- 
+New spectator mode
+JIP shall be working now
+Engineer now a real ACE Engieere  
+Bugfix: Zeus no longer Part of player group. 
+Garbage Collector should now be active
 
-Mission: [ Operation Conflict Resolve ]
-Version: [ 2-0-4 ]
-Developer(s): [ Sepp, Raini,--- . ]
-Description: [ Public Missions for Task Force 47 ]
+Todo:
+LeaderPosition undefined at startup
+Some units spawn at (0,0)
+To many waypoints are set for some groups 200 and more, and all in a radius if 20 meters
+Map verschwinden beim JIP bei allen andreren Spielern
+Ende überarbeiten unktioniert wohl nicht immer A3E Problem)
 
+Changelog 0.6 
+-------------------
+Rebase 1.7.4
 
+Changelog 0.5
+-------------------
 
-README CONTENTS
-===============
+support of ACE mod
+update LOP and RHS class names
+add mech inf companies (poor AI behavior)
+ 
 
-01. VERSION HISTORY
-02. COPYRIGHT STATEMENT
-03. TERMS OF USE
-04. LEGAL DISCLAIMER
-05. INSTALLATION
-06. REQUIRED ADDONS
-07. NOTES
-08. CHANGE HISTORY
-
-
-
-01. VERSION HISTORY
-===================
-
-Version | Date | Notes
-
-[ Insert version, format: N-N-N ] | [ Insert date, format: DD MM CCYY ] | [ Insert short note here. ]
-
-
-
-02. COPYRIGHT STATEMENT
-=======================
-
-This mission is (c)[ CCYY ] [ Insert your name(s) here. ]. All rights reserved.
+##############################################################################################
 
 
-
-03. TERMS OF USE
-================
-
-This mission (hereafter 'Software') contains files to be used in the PC simulator ArmA 3. To use the Software you must agree to the following conditions of use:
-
-1. [ Insert your name(s) here. ] (hereafter 'The Author(s)') grant to you a personal, non-exclusive license to use the Software.
-
-2. The commercial exploitation of the Software without written permission from The Author(s) is expressly prohibited.
-
-
-
-04. LEGAL DISCLAIMER
-====================
-
-The Software is distributed without any warranty; without even the implied warranty of merchantability or fitness for a particular purpose. The Software is not an official addon or tool. Use of the Software (in whole or in part) is entirely at your own risk.
-
-
-
-05. INSTALLATION
-================
-
-To begin using the Software:
-
-1. Move the file [ Insert name of your mission file here. ] into the following directory (assuming you have the Steam version of ArmA 3):
-
-C:\Program Files (x86)\Steam\steamapps\common\Arma 3\MPMissions
+Changelog Highlights 1.6
+-----------------
+Optimized and reworked complete mission framework
+More use of A3 engine functions (faster and more reliable)
+Completely new AI-Scripts (removed UPSMON)
+New searchleader engine (for easier implementation of advanced AI and other new features)
+Patrol Boats
+Enemy artillery
+more AAF - less CSAT
+Completely new weapon and equipment balancing
+Missionloading improves (no more 1 minute intro)
+JIP loading improved
+New Revive script
+No more center map cheating
+Attackchopper at escape
+Extraction placement can be set to random, close or far.
 
 
+Installation
+-----------------
+Place the mission file in the MPmissions folder inside your Arma 3 installation.
+Your ArmA3 installation should be in yoursteamfolder/steamapps/common
 
-06. REQUIRED ADDONS
-===================
-* ANYWAY REQUIRED so that LoadoutScripts work if not changed
+ 
+Contact us
+-----------------
+BI Forums: Vormulac or NeoArmageddon
+http://escape.modfact.net/
 
-[RHS: United States Armed Forces - @rhs_usf3]             -               [http://www.armaholic.com/page.php?id=27149]
-[RHS : Armed Forces Of The Russian Federation -@rhs_afrf3]-               [http://www.armaholic.com/page.php?id=27150]
-
-To play this mission the following addons are required:
-
-[ Insert name of addon ] - [URL for downloadable copy of the addon ]
-[ Insert name of addon ] - [URL for downloadable copy of the addon ]
-[ Insert name of addon ] - [URL for downloadable copy of the addon ]
-
-
-07. NOTES
-=========
-
-[ Insert your notes here. ]
-
-
-
-08. CHANGE HISTORY
-==================
-
-Version | Date
-
-[ Insert version, format: N-N-N ] | [ Insert date, format: DD MM CCYY ]
-[ Insert change #1 here. ]
-[ Insert change #2 here. ]
+ 
+Credits and Thanks
+-----------------
+BIS - OFP to ArmA3
+Engima - Creating one of the greatest Arma missions ever.
+Vormulac - Scripting and general confusion
+NeoArmageddon - Scripting and configs
+Hyperz - Scripting and configs 
+ 
+Special thanks to all voluntary and non-voluntary testers:
+Armed-Tatics:
+	Scruffy
+	Freshman
+	Maike
+	DERyoshi
+Team Generhater:
+	YayOrbitGum
+	Mefy
+	Koda
+	DrKillinger
+	Wilson
+	Dunkar
+	TotalConScience
+	Felix
+	SloppyFresh
+	Holo
+ 
+License
+-----------------
+This mission and all of it's content is released unter the Creative Commons Attribution Non-Commercial Share Alike Licence.
+This license lets you remix, tweak, and build upon this work non-commercially, as long as you credit the author and license your new creations under the identical terms. Others can download and redistribute this work just like the by-nc-nd license, but you can also translate and make remixes based on this work. All new work based on this will carry the same license, so any derivatives will also be non-commercial in nature.
+ 
+ 
+Disclaimer
+-----------------
+We take no responsibility for (im)possible damage to your game/system that may be caused by installation of this Mission.
+ 
+ 
+Changelog
+-----------------
+ 
+For a complete changelog please look at the official BIF-Thread

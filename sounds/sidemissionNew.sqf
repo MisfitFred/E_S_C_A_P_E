@@ -1,1 +1,0 @@
-playSound "sidemission_new";
