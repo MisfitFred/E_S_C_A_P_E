@@ -1,0 +1,1 @@
+playSound "mission_new";
