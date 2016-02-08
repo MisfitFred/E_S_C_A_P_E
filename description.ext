@@ -22,10 +22,10 @@ loadScreen = "escape_banner.paa";
 ///////////////////////////////////////////////////////////////////////////////////////////
 
 Respawn = "BASE";
-RespawnDelay = 60;
+RespawnDelay = 10;
 respawnOnStart=-1;
-disabledAI = 0;
-enableDebugConsole = 2;
+disabledAI = 1;
+enableDebugConsole = 0;
 
 corpseLimit = 30;
 corpseRemovalMinTime = 600;

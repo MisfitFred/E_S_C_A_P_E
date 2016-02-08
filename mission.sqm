@@ -60,7 +60,7 @@ class Mission
 	randomSeed=16426086;
 	class Intel
 	{
-		briefingName="Escape Altis RHS ACE TFAR v0.7b2";
+		briefingName="Escape Altis RHS ACE TFAR v0.7";
 		resistanceWest=0;
 		resistanceEast=1;
 		startWeather=0;

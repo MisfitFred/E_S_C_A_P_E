@@ -2,7 +2,9 @@ waituntil{!isNull(player)};
 //Clientside Stuff
 //call compile preprocessFile "Revive\reviveInit.sqf";
 
+_player =  _this select 0;
 _didJIP =  _this select 1;
+
 diag_log format["initPlayerLocal: %1 joined the Game!  didJIP=%2",name player, _didJIP];
 [] spawn {
 	disableSerialization;
@@ -28,7 +30,7 @@ player removeItem "ItemRadio";
 //removeAllContainers player; 
 removeAllAssignedItems player;
 
- /*changed by Fred: Why we need a watch at start point:-)*/
+//changed by Fred: Why we need a watch at start point:-)
 //player addItem "ItemWatch";
 //player assignItem "ItemWatch";
 
@@ -80,11 +82,21 @@ waituntil{sleep 0.1;!isNil("A3E_ParamsParsed")};
 waituntil{sleep 0.1;(!isNil("A3E_FenceIsCreated") && !isNil("A3E_StartPos") && !isNil("A3E_ParamsParsed") && (player getvariable["A3E_PlayerInitialized",false]))};
 
 
+
+// Added by Fred: start
+ _playerIsZeus = false;     
+ if (!isNil "Zeus_1") then {         
+ 	if(_player == Zeus_1) then {
+       _playerIsZeus = true; 
+    }else {
+       _playerIsZeus = false;
+    };         
+ };  
 // Check if player is dead                
 _isPlayerDead = false;
 _uid = getPlayerUID _player;
 waitUntil {!(isNil "A3E_ListOfKilledPlayers");};
-if (_uid in A3E_ListOfKilledPlayers) then
+if ((_uid in A3E_ListOfKilledPlayers)&& !(_playerIsZeus)) then
 {         
 	 ["Initialize", [_player, [], true]] call BIS_fnc_EGSpectator;            
     _player setVariable ["A3E_isDead",true, true];

@@ -1,4 +1,4 @@
-#define VERSION "0.7b2"
+#define VERSION "0.7"
 #define MISSIONNAME "Escape Altis RHS ACE TFAR"
 #define MISSIONNAMEFULL "co10 Escape Altis RHS ACE TFAR (Base A3E 1.7.4)"
 

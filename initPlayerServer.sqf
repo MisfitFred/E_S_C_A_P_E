@@ -27,8 +27,7 @@ if(name _player == "HC") then {
 	diag_log format["Escape debug: %1 is waiting for prison creation.", name _player];
     waituntil{sleep 0.5;(!isNil("A3E_FenceIsCreated") && !isNil("A3E_StartPos") && !isNil("A3E_ParamsParsed"))};
 	diag_log format["Escape debug: %1 will be placed now.", name _player];
-	_placed = false;
-     
+	_placed = false;     
      
      // Added by Fred: start
      _playerIsZeus = false;     
@@ -52,7 +51,7 @@ if(name _player == "HC") then {
      };
  	diag_log format["initPlayerServer: (initPlayerLocal)  %1 isPlayerDead=%2.", name _player, _isPlayerDead];  
          
-    // Added by Fred: Dead players or Zeus will not be placed into prison they will spawn at "respawn" marker position.       
+    // Added by Fred: Dead players or Zeus will not be placed into prison they will spawn at "respawn" marker position.  Dead JIP will be placed on lonely island. 
     if((!_playerIsZeus) && (!_isPlayerDead)) then {
 		if(time>60) then {
 			_players = [] call A3E_fnc_GetPlayers;
@@ -69,6 +68,8 @@ if(name _player == "HC") then {
 			_player setdir (random 360);
 			diag_log format["Escape debug: %1 placed at prison.", name _player];
 		};
+     } else {         
+       _player setpos [(getMarkerPos "Boot_Hill" select 0) + (random 4) - 2, (getMarkerPos "Boot_Hill" select 1) + (random 6) - 3, 0];                 
      };
 	sleep 0.5;
 	diag_log format["Escape debug: %1 is now ready (serverside).", name _player];

@@ -4,6 +4,13 @@ CO08 Escape Altis
 Requirements
 -----------------
 Arma 3 v1.08 minimum
+
+
+Todo:
+Some units spawn at (0,0)
+To many waypoints are set for some groups 200 and more, and all in a radius if 20 meters
+Map verschwinden beim JIP bei allen andreren Spielern
+Ende überarbeiten funktioniert wohl nicht immer A3E Problem)
  
 Changelog 0.7
 ------------------- 
@@ -13,12 +20,8 @@ Engineer now a real ACE Engieere
 Bugfix: Zeus no longer Part of player group. 
 Garbage Collector should now be active
 
-Todo:
+Fixed:
 LeaderPosition undefined at startup
-Some units spawn at (0,0)
-To many waypoints are set for some groups 200 and more, and all in a radius if 20 meters
-Map verschwinden beim JIP bei allen andreren Spielern
-Ende überarbeiten unktioniert wohl nicht immer A3E Problem)
 
 Changelog 0.6 
 -------------------
