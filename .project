@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>E_S_C_A_P_E</name>
+	<name>A3E_Fred_Client</name>
 	<comment></comment>
 	<projects>
 	</projects>
 	<buildSpec>
 	</buildSpec>
 	<natures>
+		<nature>org.friedenhq.armascript.projectNature</nature>
 	</natures>
 </projectDescription>

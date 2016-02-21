@@ -1,6 +1,6 @@
 #define VERSION "0.7"
 #define MISSIONNAME "Escape Altis RHS ACE TFAR"
-#define MISSIONNAMEFULL "co10 Escape Altis RHS ACE TFAR (Base A3E 1.7.4)"
+#define MISSIONNAMEFULL "co10 Escape Chernarus RHS ACE TFAR (Base A3E 1.7.4)"
 
 //--- [Controls Style Preprocessors]
 #define ST_LEFT 				0
